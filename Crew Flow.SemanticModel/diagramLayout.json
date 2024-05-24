@@ -1,0 +1,127 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 363.38299398708369,
+            "y": 0
+          },
+          "nodeIndex": "CrewFlow",
+          "nodeLineageTag": "8156ea96-cf95-4489-b159-f389873eb4ba",
+          "size": {
+            "height": 704.029056698669,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "cFDate",
+          "nodeLineageTag": "d3a17790-277e-4388-bd35-d91c18ef58a6",
+          "size": {
+            "height": 187.40526200193358,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 723.50901516101567,
+            "y": 0
+          },
+          "nodeIndex": "NewHires",
+          "nodeLineageTag": "45f4f517-ec06-457b-add0-abbb2dc4caed",
+          "size": {
+            "height": 151.19465919066494,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 219.79700852106276
+          },
+          "nodeIndex": "Direction",
+          "nodeLineageTag": "642fe919-ce77-4298-a011-e7345b5441ac",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1001.9864772584763,
+            "y": 108.12937611214082
+          },
+          "nodeIndex": "BusinessUnit",
+          "nodeLineageTag": "24acfccc-bd5c-421a-b1e6-e8c8663599f1",
+          "size": {
+            "height": 161.94056822457065,
+            "width": 200.8647725847643
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 724.896626360487,
+            "y": 223.00017237898368
+          },
+          "nodeIndex": "Organization",
+          "nodeLineageTag": "c7ea3d11-3639-42e9-b300-fda67d6ec15a",
+          "size": {
+            "height": 393.8831443431676,
+            "width": 231.79098483898417
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 355.18248349332396
+          },
+          "nodeIndex": "Documents",
+          "nodeLineageTag": "4ddc7232-d743-4cf0-9f89-1b49e3dfb3e5",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 68.147564235083138,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 1,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [],
+      "name": "Layout 1",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

@@ -1,0 +1,2245 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.128.952.0 (24.04)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"database\",\"CrewFlow\",\"NewHires\",\"Direction\",\"BusinessUnit\",\"Organization\",\"Documents\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "database",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ],
+        "expression": "\"sqldb-pelago-prod-northch-001.4d334dbfaba5.database.windows.net\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "kind": "m",
+        "lineageTag": "75220cdc-a929-4f6a-acfa-f918fff966d1"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "ec4b9102-f01d-47be-9a8e-04ef5900b907",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "item.4",
+        "fromTable": "Organization",
+        "toCardinality": "many",
+        "toColumn": "pkPosition",
+        "toTable": "CrewFlow"
+      },
+      {
+        "name": "765708be-c60d-4033-8bf6-39d083bd94df",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "pkbusinessunit",
+        "fromTable": "CrewFlow",
+        "toColumn": "pkBusinessUnit",
+        "toTable": "BusinessUnit"
+      },
+      {
+        "name": "eba3510e-6d85-4da1-bd01-af181d197eed",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "mscID",
+        "fromTable": "CrewFlow",
+        "toColumn": "employeeId",
+        "toTable": "NewHires"
+      }
+    ],
+    "roles": [
+      {
+        "name": "PELAGO_PBI_TA_AGENCIA_DE_EMPLEOS_MARITIMOS_EL_SALVADOR",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "99d78d4cb44f4bdc82979c82fc6c477a"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 1"
+          },
+          {
+            "name": "CrewFlow",
+            "filterExpression": "[manningAgency] == \"AGENCIA DE EMPLEOS MARITIMOS EL SALVADOR\""
+          }
+        ]
+      },
+      {
+        "name": "PELAGO_PBI_TA_BALI_PARADISE_CREW",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "dc464ae3362c40dbbd75972c92ca8672"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 1"
+          },
+          {
+            "name": "CrewFlow",
+            "filterExpression": "[manningAgency] == \"BALI PARADISE CREW\""
+          }
+        ]
+      },
+      {
+        "name": "PELAGO_PBI_TA_CAUX_INTERNATIONAL_GROUP",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "56bdb9b19e4e43ca9bf79a7f80e6f16b"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 1"
+          },
+          {
+            "name": "CrewFlow",
+            "filterExpression": "[manningAgency] == \"CAUX INTERNATIONAL GROUP\""
+          }
+        ]
+      },
+      {
+        "name": "PELAGO_PBI_TA_CRC_CRUISE_RECRUITING_CONSULTANTS_SAC",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "677926748c13405da6b567878a56e2ef"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 1"
+          },
+          {
+            "name": "CrewFlow",
+            "filterExpression": "[manningAgency] == \"CRC - CRUISE RECRUITING CONSULTANTS SAC\""
+          }
+        ]
+      },
+      {
+        "name": "PELAGO_PBI_TA_CREW_MARITIME_ACADEMY_PTY_LTD",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "63ae76d638c148a6ac323f24be5e43ea"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 1"
+          },
+          {
+            "name": "CrewFlow",
+            "filterExpression": "[manningAgency] == \"CREW MARITIME ACADEMY PTY (LTD)\""
+          }
+        ]
+      },
+      {
+        "name": "PELAGO_PBI_TA_EMBARCATE_GUATE",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "5249e098909946da90107b222b24e767"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 1"
+          },
+          {
+            "name": "CrewFlow",
+            "filterExpression": "[manningAgency] == \"Embarcate Guate\""
+          }
+        ]
+      },
+      {
+        "name": "PELAGO_PBI_TA_FYR_TRIPULANTES",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "d3b6029f6c8143ea818a51de896881ac"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 1"
+          },
+          {
+            "name": "CrewFlow",
+            "filterExpression": "[manningAgency] == \"Fyr Tripulantes\""
+          }
+        ]
+      },
+      {
+        "name": "PELAGO_PBI_TA_MEXICREW",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "e1bea38ee4074c1ab5fb3a74ce3d2bcc"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 1"
+          },
+          {
+            "name": "CrewFlow",
+            "filterExpression": "[manningAgency] == \"Mexicrew\""
+          }
+        ]
+      },
+      {
+        "name": "PELAGO_PBI_TA_MSC_CREWING_SERVICE_PHILIPPINES",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "925ad2a14b3a4b99a609af43bf32f0b0"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 1"
+          },
+          {
+            "name": "CrewFlow",
+            "filterExpression": "[manningAgency] == \"MSC Crewing Service Philippines\""
+          }
+        ]
+      },
+      {
+        "name": "PELAGO_PBI_TA_MSC_MADAGASCAR_SA",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "ef3d986ba4bd436188d21b74142be91f"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 1"
+          },
+          {
+            "name": "CrewFlow",
+            "filterExpression": "[manningAgency] == \"MSC MADAGASCAR S.A.\""
+          }
+        ]
+      },
+      {
+        "name": "PELAGO_PBI_TA_MSC_SHIPMANAGEMENT_LIMITED",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "50d911fba8a34f1c8727f9ad9fd13b4e"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 1"
+          },
+          {
+            "name": "CrewFlow",
+            "filterExpression": "[manningAgency] == \"MSC SHIPMANAGEMENT LIMITED\""
+          }
+        ]
+      },
+      {
+        "name": "PELAGO_PBI_TA_MSC_SHIPMANAGEMENT_LIMITED_KENYA",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "830690f9453c477e9343a59a7392847b"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 1"
+          },
+          {
+            "name": "CrewFlow",
+            "filterExpression": "[manningAgency] == \"MSC Shipmanagement Limited (Kenya)\""
+          }
+        ]
+      },
+      {
+        "name": "PELAGO_PBI_TA_OCEAN_JOBS",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "8d38346fdd474258b20deb897c854182"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 1"
+          },
+          {
+            "name": "CrewFlow",
+            "filterExpression": "[manningAgency] == \"OCEAN JOBS\""
+          }
+        ]
+      },
+      {
+        "name": "PELAGO_PBI_TA_OCEANGOERS_LTD",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "0941240827ae46e1acdebc2c249dbe47"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 1"
+          },
+          {
+            "name": "CrewFlow",
+            "filterExpression": "[manningAgency] == \"OCEANGOERS LTD\""
+          }
+        ]
+      },
+      {
+        "name": "PELAGO_PBI_TA_PT_MARINA_PRIMA_SUKSES",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "62f9e13898664829827d9ee4a7c0635e"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 1"
+          },
+          {
+            "name": "CrewFlow",
+            "filterExpression": "[manningAgency] == \"PT. MARINA PRIMA SUKSES\""
+          }
+        ]
+      },
+      {
+        "name": "PELAGO_PBI_TA_ROSA_DOS_VENTOS_SERVICOS",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "aa1972696ab741c08a24d15e36401f43"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 1"
+          },
+          {
+            "name": "CrewFlow",
+            "filterExpression": "[manningAgency] == \"ROSA DOS VENTOS SERVICOS\""
+          }
+        ]
+      },
+      {
+        "name": "PELAGO_PBI_TA_SHANGHAI_HUAYANG_MARITIME_SCI-TECH_DEVEL_COLTD",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "b936cac612e04363bdc678569a83b5fa"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 1"
+          },
+          {
+            "name": "CrewFlow",
+            "filterExpression": "[manningAgency] == \"Shanghai Huayang Maritime Sci-Tech Devel. Co.\""
+          }
+        ]
+      },
+      {
+        "name": "PELAGO_PBI_TA_TSTS_GROUP_SHPK",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "b357a33eb4ef45eb96d81300494fe37c"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 1"
+          },
+          {
+            "name": "CrewFlow",
+            "filterExpression": "[manningAgency] == \"TSTS GROUP SH.P.K.\""
+          }
+        ]
+      },
+      {
+        "name": "PELAGO_PBI_TA_VALEMAR_BRASIL_ME",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "9049552e2aca4adc8a421c7c4f935a27"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 1"
+          },
+          {
+            "name": "CrewFlow",
+            "filterExpression": "[manningAgency] == \"VALEMAR BRASIL ME\""
+          }
+        ]
+      },
+      {
+        "name": "PELAGO_PBI_EXPLORA_ALL",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "2da7345d2a5e440a8bbf6627ab11883f"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 2"
+          }
+        ]
+      },
+      {
+        "name": "PELAGO_PBI_MSCCRUISES_ALL",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "0e314496098a4d80a0d7240beb9bdb0e"
+          }
+        ],
+        "modelPermission": "read"
+      },
+      {
+        "name": "PELAGO_PBI_WORKFORCE",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "5f90cc7d4e4e4e05abdb0b1aed7ec421"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "BusinessUnit",
+            "filterExpression": "[pkBusinessUnit] == 1"
+          }
+        ]
+      }
+    ],
+    "sourceQueryCulture": "it-IT",
+    "tables": [
+      {
+        "name": "CrewFlow",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "fullName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2ed155bd-a330-4821-a1e4-969f6c0a2263",
+            "sourceColumn": "fullName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "jobTitle",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d453d2f2-30e7-4ec2-9d9e-ed533e5a4c91",
+            "sourceColumn": "jobTitle",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "direction",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2b527f1b-11c1-4e51-972e-f7715c4936e9",
+            "sourceColumn": "direction",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "estimatedEmbarkdate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "83162045-a5b4-475c-a777-21db92b65210",
+            "sourceColumn": "estimatedEmbarkdate",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "estimatedDisembarkDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "8a74016c-c06e-424c-8bd2-b33314245aac",
+            "sourceColumn": "estimatedDisembarkDate",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "travelRequestDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "65044bd4-8782-40ba-a447-2ccdf200590c",
+            "sourceColumn": "travelRequestDate",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ship",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "eb8e9231-4097-4248-8b82-8e7b1e6c9d48",
+            "sourceColumn": "ship",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nationality",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0c7112cd-9fcd-42ee-ba1e-c94d83090552",
+            "sourceColumn": "nationality",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "manningAgency",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "34b612af-b517-40b2-b2d0-d13125370e24",
+            "sourceColumn": "manningAgency",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PreviousOnBoard",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "84073f8b-e3eb-41c7-b548-6f4e952ab8af",
+            "sourceColumn": "PreviousOnBoard",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "New Hire",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "IF(CrewFlow[PreviousOnBoard] > 0, \"NO\", \"YES\")"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "6995aa78-a6da-432e-bb06-dd433418ce3c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "IsNewHire",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "VAR currentDate = ALLSELECTED(cFDate[Date])",
+              "var expr = CALCULATE (",
+              "        COUNT(CrewFlow[mscID]),",
+              "        FILTER(",
+              "            NewHires,",
+              "            --Dates inside range",
+              "            ( NewHires[NewHire_fromDate] >= FIRSTDATE(currentDate) && NewHires[NewHire_fromDate] <= LASTDATE(currentDate) )",
+              "        )",
+              "    )",
+              "RETURN",
+              "IF(",
+              "    expr > 0 ",
+              "    || (",
+              "        (CrewFlow[schedulingStatus] = \"Onboard\" || CrewFlow[schedulingStatus] = \"Ready to Disembark\") && CrewFlow[PreviousOnBoard] = 0",
+              "    )",
+              "    , \"YES\"",
+              "    ,IF(",
+              "     expr = 0 && (",
+              "        (CrewFlow[schedulingStatus] <> \"Check Out\" && CrewFlow[schedulingStatus] <> \"Ready to Disembark\" && CrewFlow[schedulingStatus] <> \"Onboard\") && CrewFlow[PreviousOnBoard] = 0",
+              "    ),\"No Hires\",\"NO\")",
+              ")"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "bf5bd9d2-2132-40c6-91d9-87b4fc5cae4c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "rank",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "10d884ae-878a-43e8-a179-9ccc89f56437",
+            "sourceColumn": "rank",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "residence",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "83e6ff6a-a235-4897-8223-92f19d70eee6",
+            "sourceColumn": "residence",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "BirthDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "1385accd-36be-46fd-b7fc-79bcf8207da5",
+            "sourceColumn": "BirthDate",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ScheduledEmbarkreason",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8769d3b0-7dc0-48b8-8a0d-8d6497b35a02",
+            "sourceColumn": "ScheduledEmbarkreason",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ScheduledDisembarkreason",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3775c5db-4b84-4096-82de-0b26a18aa628",
+            "sourceColumn": "ScheduledDisembarkreason",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "typeContract",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f9681c8e-e14e-4940-8b85-dabf9b284835",
+            "sourceColumn": "typeContract",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NationalityName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "932a98ba-47c1-40a0-aef8-619454fcc622",
+            "sourceColumn": "NationalityName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Division",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "93b08cdd-4715-4e36-853f-364db4b60e76",
+            "sourceColumn": "Division",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SubDivision",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cfd45381-336b-4ff6-9320-d0c2ec9cd5af",
+            "sourceColumn": "SubDivision",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Department",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3813bcbe-3940-4050-9e02-6197cf14367f",
+            "sourceColumn": "Department",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SubDepartment",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f824ab07-3794-46de-8899-85fe458844d3",
+            "sourceColumn": "SubDepartment",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PersonalMobile",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dfb204cf-4fb4-4de5-9949-7b8dff12a14b",
+            "sourceColumn": "PersonalMobile",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "isConcessionarie",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ea80aff3-3ea2-4a0b-9075-bf93259a70e0",
+            "sourceColumn": "isConcessionarie",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Engagement_#_By_Employee",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "db52b069-a18e-46bd-aef9-8b5bb5222c7b",
+            "sourceColumn": "Engagement_#_By_Employee",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "C_IsDummyEngagement",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "var _isTranshipment =",
+              "LOOKUPVALUE(",
+              "    CrewFlow[Engagement_#_By_Employee],",
+              "    CrewFlow[mscID],",
+              "    CrewFlow[mscID],",
+              "    CrewFlow[Engagement_#_By_Employee],",
+              "    CrewFlow[Engagement_#_By_Employee] - 1,",
+              "    CrewFlow[ScheduledDisembarkreason],",
+              "    \"Transhipment\"",
+              ")",
+              "",
+              "RETURN",
+              "SWITCH(",
+              "    TRUE(),",
+              "    (ISBLANK(_isTranshipment) && CrewFlow[ScheduledEmbarkreason] == \"Relocation\" && CrewFlow[ScheduledDisembarkreason] IN { \"Change Position\", \"Change of contract\", \"Demotion\", \"Promotion\" }), \"YES\",",
+              "    \"NO\"",
+              ")"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "63fdce88-e632-4202-9f0c-c3e496cf069e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "isTranshipment",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": [
+              "",
+              "LOOKUPVALUE(",
+              "    CrewFlow[Engagement_#_By_Employee],",
+              "    CrewFlow[mscID],",
+              "    CrewFlow[mscID],",
+              "    CrewFlow[Engagement_#_By_Employee],",
+              "    CrewFlow[Engagement_#_By_Employee] - 1,",
+              "    CrewFlow[ScheduledDisembarkreason],",
+              "    \"Transhipment\"",
+              ")"
+            ],
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "13aeba41-bb16-483f-9679-dc36e93b1a81",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "pkPosition",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "35f12e82-9e2a-4d05-9c72-96deed7101ca",
+            "sourceColumn": "pkPosition",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "uiresourceitem",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f1f31cf9-3294-4b40-ac95-2adaf302db54",
+            "sourceColumn": "uiresourceitem",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "relevantou",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "27669b32-8879-4af0-a658-91464934d00a",
+            "sourceColumn": "relevantou",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "countalerts",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "043935d8-5b55-45a9-8f9e-13a5b1fc102d",
+            "sourceColumn": "countalerts",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "uisite",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "11e4586d-fc92-49c8-8cac-cc73e249507e",
+            "sourceColumn": "uisite",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "idpreviousresourceitem",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8c1e4600-16ce-4d53-aa46-c3e3e1b616d1",
+            "sourceColumn": "idpreviousresourceitem",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "pktravelrequeststatus",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e3e5850e-9b2d-4c16-95de-819d4d11f3ad",
+            "sourceColumn": "pktravelrequeststatus",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "travelrequestusername",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e60642e1-3eec-4d5b-bc8b-fad89bb55bfb",
+            "sourceColumn": "travelrequestusername",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "idresourceitem",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8a3ddc09-f8f5-474c-a0c2-78570f87c103",
+            "sourceColumn": "idresourceitem",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "fkcandidatestatus",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9badf431-55f3-46cd-a9fd-998044b65909",
+            "sourceColumn": "fkcandidatestatus",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "pkbusinessunit",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5ca359ee-9960-4560-831b-959d65e7f0e6",
+            "sourceColumn": "pkbusinessunit",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "embarkationPort",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "35a18c14-e5a6-433a-b623-c02fc54984b5",
+            "sourceColumn": "embarkationPort",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "disembarkationPort",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d5ca0a02-f929-47e9-8a44-6263805f5932",
+            "sourceColumn": "disembarkationPort",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "travelRequestStatus",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ff15ef09-ae29-4a4b-86f2-b48b4aba60a2",
+            "sourceColumn": "travelRequestStatus",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "mscID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "913c18bf-9e42-4f1e-9646-e7602c0ab922",
+            "sourceColumn": "mscID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "schedulingStatus",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "753ddf2d-8fea-4051-a800-50120ca57c5d",
+            "sourceColumn": "schedulingStatus",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "itemCode",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f4294e01-e22a-47c1-8886-dfa1064bf086",
+            "sourceColumn": "itemCode",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "uiEmployee",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0ee126ae-2f22-41b3-a8c2-59a727aac124",
+            "sourceColumn": "uiEmployee",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Passport",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "363f184d-ef89-433b-938a-17d31a5be5a4",
+            "sourceColumn": "Passport",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "U.S.A. Visa",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "961195b9-17b5-4087-a521-d5bfc05b3036",
+            "sourceColumn": "U.S.A. Visa",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Schengen Visa",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8b6c65fd-7617-4bef-92e8-84cc698f97ca",
+            "sourceColumn": "Schengen Visa",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SARS Covid-19 Vaccine Issue Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "ca1d7617-fff6-4dc7-92cc-e7c3a6b07ce0",
+            "sourceColumn": "SARS Covid-19 Vaccine Issue Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "U.S.A Visa Expiry Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "5fe85219-038b-484d-ad90-b0ca667904b8",
+            "sourceColumn": "U.S.A Visa Expiry Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Schengen Visa Expiry Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "02bc7f20-a2b3-4f65-a64e-1cb626f6fc06",
+            "sourceColumn": "Schengen Visa Expiry Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SARS Covid-19 Vaccine Type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bccae68c-8bba-4800-b1e6-99d83b9a22c1",
+            "sourceColumn": "SARS Covid-19 Vaccine Type",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "8156ea96-cf95-4489-b159-f389873eb4ba",
+        "measures": [
+          {
+            "name": "TitleCounterESA",
+            "expression": [
+              "",
+              "\"Total \" & [Label] & \":\""
+            ],
+            "lineageTag": "e543d5d4-5cda-4fad-b391-6c5d8b2fb2b6"
+          },
+          {
+            "name": "_Direction",
+            "expression": [
+              "VAR currentDate = ALLSELECTED(cFDate[Date], cFDate[Date])",
+              "VAR _FDate = FIRSTDATE(currentDate)",
+              "VAR _LDate = LASTDATE(currentDate)",
+              "",
+              "var _direction = [_VanacoreDirection]",
+              "var _estimatedEmbarkdate = SELECTEDVALUE(CrewFlow[estimatedEmbarkdate])",
+              "var _estimatedDisembarkdate = SELECTEDVALUE(CrewFlow[estimatedDisembarkDate])",
+              "",
+              "RETURN",
+              "SWITCH(",
+              "    TRUE(),",
+              "    (",
+              "        _direction = \"IN/OUT\"",
+              "        && (_estimatedEmbarkdate >= _FDate && _estimatedEmbarkdate <= _LDate)",
+              "        && (_estimatedDisembarkdate >= _FDate && _estimatedDisembarkdate <= _LDate)",
+              "    ), \"IN/OUT\",",
+              "    (",
+              "        _direction = \"IN/OUT\"",
+              "        && (_estimatedEmbarkdate >= _FDate && _estimatedEmbarkdate <= _LDate)",
+              "    ), \"IN\",",
+              "    (",
+              "        _direction = \"IN/OUT\"",
+              "        && (_estimatedDisembarkdate >= _FDate && _estimatedDisembarkdate <= _LDate) ",
+              "    ), \"OUT\"",
+              "    ,_direction",
+              "    /*(",
+              "        (_estimatedEmbarkdate >= _FDate && _estimatedEmbarkdate <= _LDate)",
+              "        && (_estimatedDisembarkdate >= _FDate && _estimatedDisembarkdate <= _LDate)",
+              "    ), \"IN/OUT\",",
+              "    (",
+              "        (_estimatedEmbarkdate >= _FDate && _estimatedEmbarkdate <= _LDate)",
+              "    ), \"IN\",",
+              "    (",
+              "        (_estimatedDisembarkdate >= _FDate && _estimatedDisembarkdate <= _LDate) ",
+              "    ), \"OUT\"",
+              "    */",
+              ")"
+            ],
+            "lineageTag": "8422563e-69b1-4632-8574-bf122377c593"
+          },
+          {
+            "name": "_VanacoreDirection",
+            "expression": [
+              "",
+              "--VAR currentDate = ALLSELECTED(cFDate[Date], cFDate[Date])",
+              "--VAR _FDate = FIRSTDATE(currentDate)",
+              "--VAR _LDate = LASTDATE(currentDate)",
+              "--VAR _estimatedEmbarkdate = SELECTEDVALUE(CrewFlow[estimatedEmbarkdate])",
+              "--VAR _estimatedDisembarkdate = SELECTEDVALUE(CrewFlow[estimatedDisembarkDate])",
+              "",
+              "var _isTranshipment = SELECTEDVALUE(CrewFlow[isTranshipment])",
+              "var _flowIn = SELECTEDVALUE(CrewFlow[ScheduledEmbarkreason])",
+              "var _flowOut = SELECTEDVALUE(CrewFlow[ScheduledDisembarkreason])",
+              "",
+              "RETURN",
+              "SWITCH(",
+              "    TRUE(),",
+              "    (",
+              "        _flowIn = \"Relocation\" && _flowOut = \"End of contract\" && NOT(_isTranshipment)",
+              "    ), \"OUT\",",
+              "     (",
+              "        (_flowIn = \"Relocation\" && _flowOut = \"End of contract\" && _isTranshipment)",
+              "    ), \"IN/OUT\",",
+              "    (",
+              "        _flowOut  IN { \"Change Position\", \"Change of contract\", \"Demotion\", \"Promotion\" }",
+              "    ), \"IN\",",
+              "    (",
+              "        NOT( _flowOut  IN { \"Change Position\", \"Change of contract\", \"Demotion\", \"Promotion\" })",
+              "    ), \"IN/OUT\"",
+              "   ",
+              "    /*",
+              "     (",
+              "        (_estimatedEmbarkdate >= _FDate && _estimatedEmbarkdate <= _LDate)",
+              "        && (_estimatedDisembarkdate >= _FDate && _estimatedDisembarkdate <= _LDate)",
+              "    ), \"IN/OUT\",",
+              "    (",
+              "        (_estimatedEmbarkdate >= _FDate && _estimatedEmbarkdate <= _LDate)",
+              "    ), \"IN\",",
+              "    (",
+              "        (_estimatedDisembarkdate >= _FDate && _estimatedDisembarkdate <= _LDate) ",
+              "    ), \"OUT\"",
+              "    */",
+              ")"
+            ],
+            "lineageTag": "821ef280-fbba-475d-85ab-3a0275b1333c"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "CrewFlow-e645d49a-3022-4ca7-a466-e8dcf6e344b9",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    dbo_CrewFlow = Sql.Database(database, \"P4A-ANALYTICSDB\", [Query=\"SELECT DISTINCT #(lf)v.[uiresourceitem],#(lf)   v.[estimatedEmbarkdate],#(lf)   v.[estimatedDisembarkDate],#(lf)   v.[uiEmployee],#(lf)   v.[uiPositionHistory],#(lf)   v.[relevantou],#(lf)   v.[countalerts],#(lf)   v.[jobTitle],#(lf)   v.[direction],#(lf)   v.[schedulingStatus],#(lf)   v.[uisite],#(lf)   v.[uiEmbarkationPort],#(lf)   v.[embarkationPort],#(lf)   v.[uiDisembarkationPort],#(lf)   v.[disembarkationPort],#(lf)   v.[idpreviousresourceitem],#(lf)   v.[pktravelrequeststatus],#(lf)   v.[travelRequestStatus],#(lf)   v.[travelrequestusername],#(lf)   v.[travelRequestDate],#(lf)   v.[uiTravelRequest],#(lf)   v.[idresourceitem],#(lf)   v.[ship],#(lf)   v.[uiManningAgency],#(lf)   v.[nationality],#(lf)   v.[fullName],#(lf)   v.[mscID],#(lf)   v.[manningAgency],#(lf)   v.[fkcandidatestatus],#(lf)   v.[itemCode],#(lf)   bu.[pkbusinessunit],#(lf)   path.[item] AS [pkPosition],#(lf)   employee.[dob] AS [BirthDate],#(lf)   rAC.[description] AS [rank],#(lf)   rAC.[fktypecontract] AS [typeContract],#(lf)   n.[uivaluecountry_nat] AS NationalityName,#(lf)   residence.[streetname] AS residence,#(lf)   flowR_In.[description] AS ScheduledEmbarkreason,#(lf)   flowR_Out.[description] AS ScheduledDisembarkreason,   #(lf)   (#(lf)      SELECT COUNT(*)#(lf)      FROM [P4O-EMPLOYEEDB].employee.[timelineblock] AS embarkTimelineBlock#(lf)      WHERE embarkTimelineBlock.[fktimeline] = timeline.[pktimeline]#(lf)         AND embarkTimelineBlock.[fkhrstatus] = 4#(lf)         AND embarkTimelineBlock.[uiresouceitem] != v.[uiresourceitem]#(lf)   ) AS PreviousOnBoard,#(lf)   (SELECT s.[value] FROM STRING_SPLIT(path.treepathname, '>', 1) s WHERE s.[ordinal] = 1) AS [Division],#(lf)   (SELECT s.[value] FROM STRING_SPLIT(path.treepathname, '>', 1) s WHERE s.[ordinal] = 2) AS [SubDivision],#(lf)   (SELECT s.[value] FROM STRING_SPLIT(path.treepathname, '>', 1) s WHERE s.[ordinal] = 3) AS [Department],#(lf)   (SELECT s.[value] FROM STRING_SPLIT(path.treepathname, '>', 1) s WHERE s.[ordinal] = 4) AS [SubDepartment],#(lf)   CONCAT(mobilePhoneContact.[internationalcode], ' ', mobilePhoneContact.[number]) AS PersonalMobile,#(lf)   mAgency.[isconcessionarie] AS isConcessionarie,#(lf)   ROW_NUMBER() OVER ( partition BY v.[mscid] ORDER BY v.[mscid], v.[estimatedembarkdate] ) AS [Engagement_#_By_Employee]#(lf)#(lf)FROM [P4P-SCHEDULINGDB].[Scheduling].[v_schedulingemployee] v#(lf)   INNER JOIN (#(lf)      SELECT mscid,#(lf)      uisite,#(lf)      estimatedembarkdate,#(lf)      MAX(idresourceitem) AS maxIdRes#(lf)      FROM [P4P-SCHEDULINGDB].[Scheduling].[v_schedulingemployee]#(lf)      GROUP BY mscid, uisite, estimatedembarkdate#(lf)   ) AS lastSchedule ON lastSchedule.[mscid] = v.[mscid]#(lf)      AND lastSchedule.[estimatedembarkdate] = v.[estimatedembarkdate]#(lf)      AND lastSchedule.[maxidres] = v.[idresourceitem]#(lf)   INNER JOIN [P4O-EMPLOYEEDB].[Employee].[Employee] employee ON employee.[uiemployee] = v.[uiemployee]#(lf)   INNER JOIN [P4O-COMMONDB].[Common].[BusinessUnit] bu ON bu.[uibusinessunit] = employee.[uibusinessunit]#(lf)   INNER JOIN [P4O-EMPLOYEEDB].[Employee].[Timeline] timeline ON timeline.[fkemployee] = employee.[pkemployee]#(lf)   LEFT JOIN [P4O-EMPLOYEEDB].[Employee].[ResidentialAddress] residence ON employee.[pkemployee] = residence.[fkemployee]#(lf)   LEFT JOIN [P4O-EMPLOYEEDB].[Employee].[ManningAgency] mAgency ON v.[uimanningagency] = mAgency.[uimanningagency] #(lf)   LEFT JOIN [P4O-EMPLOYEEDB].[Employee].[Nationality] n ON employee.[pkEmployee] = n.[fkEmployee]#(lf)   LEFT JOIN [P4O-ACCOUNTINGDB].[Accounting].[CrewContract] crewC ON v.[uicrewcontract] = crewC.[uicrewcontract]#(lf)   LEFT JOIN [P4O-ACCOUNTINGDB].[Accounting].[RankAsContract] rAC ON crewC.[fkrankascontract] = rAC.[pkrankascontract]#(lf)   --Engagement#(lf)   LEFT JOIN [P4P-SCHEDULINGDB].[Scheduling].[Engagement] eng ON v.[fkengagement] = eng.[pkengagement]#(lf)   LEFT JOIN [P4O-COMMONDB].[Common].[Flowreason] flowR_In ON eng.[uiflowreason_in] = flowR_In.[uiflowreason]#(lf)   LEFT JOIN [P4O-COMMONDB].[Common].[Flowreason] flowR_Out ON eng.[uiflowreason_out] = flowR_Out.[uiflowreason]#(lf)   ----Position#(lf)   LEFT JOIN [P4P-ORGANISATIONDB].[Organisation].[PositionHistory] positionH ON v.[uipositionhistory] = positionH.[uipositionhistory]#(lf)   LEFT JOIN [P4P-ORGANISATIONDB].[Organisation].[Item] organisationItem ON positionH.[fkitem] = organisationItem.[pkitem]#(lf)   LEFT JOIN [P4P-ORGANISATIONDB].[Organisation].[TreePath] path ON organisationItem.[pkitem] = path.[item]#(lf)      AND path.[uisite] = (#(lf)         SELECT s.[uiship]#(lf)         FROM [P4O-COMMONDB].[Common].[Ship] s#(lf)         WHERE s.[fkbusinessunit] = bu.[pkbusinessunit]#(lf)            AND s.[description] LIKE '%Master Ship%'#(lf)      )#(lf)   LEFT JOIN (#(lf)      SELECT TOP(1)#(lf)      fkemployee,#(lf)      fktypephone,#(lf)      number,#(lf)      isemergency,#(lf)      internationalcode#(lf)      FROM [P4O-EMPLOYEEDB].[Employee].[PhoneContact]#(lf)      LEFT JOIN [P4O-EMPLOYEEDB].[Employee].[InternationalCode] ON fkinternationalcode = pkinternationalcode#(lf)      WHERE fktypephone = 1 AND isemergency = '0'#(lf)      ORDER BY pkphonecontact#(lf)   ) AS mobilePhoneContact ON employee.[pkemployee] = mobilePhoneContact.[fkemployee]#(lf)#(lf)WHERE (DATEDIFF(DAY, v.[estimatedembarkdate], v.[estimateddisembarkdate]) >= 0)#(lf)   AND path.[isactive] = '1'\"]),",
+                "    #\"Changed DateTime Types\" = Table.TransformColumnTypes(dbo_CrewFlow,{{\"estimatedEmbarkdate\", type date}, {\"estimatedDisembarkDate\", type date}, {\"travelRequestDate\", type date}}),",
+                "    #\"Removed Extra Columns\" = Table.RemoveColumns(#\"Changed DateTime Types\",{\"uiDisembarkationPort\", \"uiPositionHistory\", \"uiManningAgency\", \"uiEmbarkationPort\", \"uiTravelRequest\"}),",
+                "    #\"Capitalized Each Word for n Columns\" = Table.TransformColumns(#\"Removed Extra Columns\",{{\"fullName\", Text.Proper, type text},{\"SubDivision\", Text.Proper, type text}, {\"Department\", Text.Proper, type text}, {\"SubDepartment\", Text.Proper, type text}, {\"jobTitle\", Text.Proper, type text}}),",
+                "    #\"Uppercased Text for manningAgency\" = Table.TransformColumns(#\"Capitalized Each Word for n Columns\",{{\"manningAgency\", Text.Upper, type text}}),",
+                "    #\"Replaced Value for isConcessionarie\" = Table.ReplaceValue(#\"Uppercased Text for manningAgency\",\"0\",\"NO\",Replacer.ReplaceText,{\"isConcessionarie\"}),",
+                "    #\"Replaced Value for isConcessionare - 2\" = Table.ReplaceValue(#\"Replaced Value for isConcessionarie\",\"1\",\"YES\",Replacer.ReplaceText,{\"isConcessionarie\"}),",
+                "    #\"Replaced Value for direction\" = Table.ReplaceValue(#\"Replaced Value for isConcessionare - 2\", null, \"MISSING ASSIGNMENT\", Replacer.ReplaceValue, {\"direction\"}),",
+                "    #\"Merged Documents Query\" = Table.NestedJoin(#\"Replaced Value for direction\", {\"uiEmployee\"}, Documents, {\"uiEmployee\"}, \"Documents\", JoinKind.LeftOuter),",
+                "    #\"Expanded Documents\" = Table.ExpandTableColumn(#\"Merged Documents Query\", \"Documents\", {\"Passport\", \"U.S.A. Visa\", \"Schengen Visa\", \"SARS Covid-19 Vaccine Issue Date\", \"U.S.A Visa Expiry Date\", \"Schengen Visa Expiry Date\", \"SARS Covid-19 Vaccine Type\"}, {\"Passport\", \"U.S.A. Visa\", \"Schengen Visa\", \"SARS Covid-19 Vaccine Issue Date\", \"U.S.A Visa Expiry Date\", \"Schengen Visa Expiry Date\", \"SARS Covid-19 Vaccine Type\"})",
+                "in",
+                "    #\"Expanded Documents\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "cFDate",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "4bb1b933c9994a209ddb8129a1d78977"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "cc571d40-f884-463f-b6b2-6a7545c1d75c",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "lineageTag": "d3a17790-277e-4388-bd35-d91c18ef58a6",
+        "measures": [
+          {
+            "name": "DatesFilter",
+            "expression": [
+              "",
+              "VAR currentDate = ALLSELECTED(cFDate[Date])",
+              "VAR _FDate = FIRSTDATE(currentDate)",
+              "VAR _LDate = LASTDATE(currentDate)",
+              "",
+              "VAR _filterDirections = VALUES('Direction'[direction])",
+              "VAR _movements = IF(COUNTROWS(_filterDirections) = 3, \"ALL\", CONCATENATEX(_filterDirections, [direction], \"/\"))",
+              "",
+              "VAR _count =",
+              "CALCULATE (",
+              "    COUNT(CrewFlow[idResourceItem]),",
+              "    FILTER (",
+              "        CrewFlow,",
+              "        SWITCH( _movements,",
+              "            \"IN\", ( ",
+              "                CrewFlow[_Direction] = \"IN\" ",
+              "                && (CrewFlow[estimatedEmbarkdate] >= _FDate && CrewFlow[estimatedEmbarkdate] <= _LDate)",
+              "            ),",
+              "            \"OUT\", ( ",
+              "                CrewFlow[_Direction] = \"OUT\" ",
+              "                && (CrewFlow[estimatedDisembarkDate] >= _FDate && CrewFlow[estimatedDisembarkDate] <= _LDate)",
+              "            ),",
+              "            \"ALL\", (        ",
+              "                (",
+              "                    CrewFlow[estimatedEmbarkdate] >= _FDate && CrewFlow[estimatedEmbarkdate] <= _LDate",
+              "                ) ||  (",
+              "                    CrewFlow[estimatedDisembarkDate] >= _FDate && CrewFlow[estimatedDisembarkDate] <= _LDate",
+              "                )",
+              "            ),",
+              "            \"OUT/IN\", (",
+              "                CrewFlow[_Direction] = \"IN/OUT\"",
+              "                && (",
+              "                    (",
+              "                        CrewFlow[estimatedEmbarkdate] >= _FDate && CrewFlow[estimatedEmbarkdate] <= _LDate",
+              "                    ) ||  (",
+              "                        CrewFlow[estimatedDisembarkDate] >= _FDate && CrewFlow[estimatedDisembarkDate] <= _LDate",
+              "                    )",
+              "                )",
+              "            ),",
+              "            \"IN/OUT\", (",
+              "                CrewFlow[_Direction] = \"IN/OUT\"",
+              "                && (",
+              "                    (",
+              "                        CrewFlow[estimatedEmbarkdate] >= _FDate && CrewFlow[estimatedEmbarkdate] <= _LDate",
+              "                    ) ||  (",
+              "                        CrewFlow[estimatedDisembarkDate] >= _FDate && CrewFlow[estimatedDisembarkDate] <= _LDate",
+              "                    )",
+              "                )",
+              "            )",
+              "        )",
+              "    )  ",
+              ")",
+              "",
+              "RETURN",
+              "IF(ISBLANK(_count), 0, _count)"
+            ],
+            "formatString": "0",
+            "lineageTag": "46fa8fc5-c92b-430a-a5a3-8d50620c3e18"
+          },
+          {
+            "name": "Label",
+            "expression": [
+              "",
+              "VAR _filterDirections = VALUES('Direction'[direction])",
+              "",
+              "var _movements = IF(COUNTROWS(_filterDirections) = 3, \"ALL\", CONCATENATEX(_filterDirections, [direction], \"/\"))",
+              "",
+              "RETURN",
+              "_movements"
+            ],
+            "lineageTag": "19b2a8e3-58f3-4bec-8103-7b234c742995"
+          },
+          {
+            "name": "Old_DatesFilter",
+            "expression": [
+              "",
+              "VAR currentDate = ALLSELECTED(cFDate[Date])",
+              "VAR _FDate = FIRSTDATE(currentDate)",
+              "VAR _LDate = LASTDATE(currentDate)",
+              "",
+              "VAR _filterDirections = VALUES('CrewFlow'[direction])",
+              "VAR _movements = IF(COUNTROWS(_filterDirections) = 3, \"ALL\", CONCATENATEX(_filterDirections, [direction], \"/\"))",
+              "",
+              "RETURN",
+              "CALCULATE (",
+              "    COUNT(CrewFlow[idResourceItem]),",
+              "    FILTER (",
+              "        CrewFlow,",
+              "        --Dates outside range",
+              "        ( CrewFlow[estimatedEmbarkdate] <= _FDate && CrewFlow[estimatedDisembarkDate] >= _LDate ) ||",
+              "        --Dates inside range",
+              "        ( CrewFlow[estimatedEmbarkdate] >= _FDate && CrewFlow[estimatedDisembarkDate] <= _LDate ) ||",
+              "        --Dates between Last Date of filter",
+              "        ( CrewFlow[estimatedEmbarkdate] <= _LDate && CrewFlow[estimatedDisembarkDate] >= _LDate ) ||",
+              "        --Dates between First Date of filter",
+              "        ( CrewFlow[estimatedEmbarkdate] <= _FDate && CrewFlow[estimatedDisembarkDate] >= _FDate )",
+              "    )  ",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "654aa44d-a7cf-44cf-9869-40fbe417d0ed"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "cFDate-7d2f6113-cb9b-48a1-922a-2cf1879f99a3",
+            "mode": "import",
+            "source": {
+              "expression": "CALENDAR(MIN(CrewFlow[estimatedEmbarkdate]), MAX(CrewFlow[estimatedDisembarkDate]))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "NewHires",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "IsHidden"
+          }
+        ],
+        "columns": [
+          {
+            "name": "employeeId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "b74cc245-0192-4746-a044-cf8d913d1e77",
+            "sourceColumn": "employeeId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NewHire_fromDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "isHidden": true,
+            "lineageTag": "4fbac0f3-fb5e-46be-b6b7-b695541b7a69",
+            "sourceColumn": "NewHire_fromDate",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NewHire_toDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "isHidden": true,
+            "lineageTag": "d7f761a4-9d2d-4875-a2d1-4d4bd4a2fcbe",
+            "sourceColumn": "NewHire_toDate",
+            "summarizeBy": "none"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "45f4f517-ec06-457b-add0-abbb2dc4caed",
+        "partitions": [
+          {
+            "name": "NewHires-43ce5e5a-10ab-4ad4-b6ce-6b3288403d99",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(database, \"P4A-ANALYTICSDB\", [Query=\"with potentialNewHire as(#(lf)    -- seleziona tutti quelli che possiedono o possedevano un blocchetto Applicant Ready to work alla fine del mese precedente#(lf)    Select #(lf)        e.pkEmployee#(lf)        ,e.employeeId#(lf)    from [P4O-Employeedb].Employee.Employee e#(lf)    join [P4O-Employeedb].Employee.Timeline t on e.pkEmployee=t.fkEmployee#(lf)    JOIN [P4O-Employeedb].Employee.TimelineBlock tb on t.pkTimeline=tb.fkTimeline#(lf)    LEFT JOIN [P4O-Employeedb].Employee.ScheduleFlowBlock sfb on tb.pkTimelineBlock=sfb.fkTimelineBlock#(lf)    where fkHrStatus=17#(lf)    and sfb.pkScheduleFlowBlock is NULL#(lf)    --and tb.toDate > @endPreviousMonth#(lf)#(lf)    UNION -- seleziona tutti quelli che non hanno timelineblock di tipo ingaggio alla fine del mese precedente#(lf)    #(lf)    Select #(lf)        e.pkEmployee#(lf)        ,e.employeeId#(lf)    from [P4O-Employeedb].Employee.Employee e#(lf)    join [P4O-Employeedb].Employee.Timeline t on e.pkEmployee=t.fkEmployee#(lf)    LEFT JOIN (#(lf)        select * from [P4O-Employeedb].Employee.TimelineBlock#(lf)        where --fromDate <= @endPreviousMonth and#(lf)            isDeleted=0 and fkHrStatus in (4,1)#(lf)        )  tb on t.pkTimeline=tb.fkTimeline#(lf)    group by e.pkEmployee, e.employeeId#(lf)    having count(tb.pkTimelineBlock)=0#(lf))#(lf)#(lf)-- Seleziona per i precedenti se hanno un imbarco che inizia nel mese corrente#(lf)Select e.employeeId#(lf)#(tab), tb.uiResouceItem as uiResourceItem#(lf)    , tb.fromDate#(lf)#(tab), tb.toDate#(lf)from [P4O-Employeedb].Employee.Employee e#(lf)join [P4O-Employeedb].Employee.Timeline t on e.pkEmployee=t.fkEmployee#(lf)JOIN [P4O-Employeedb].Employee.TimelineBlock tb on t.pkTimeline=tb.fkTimeline#(lf)LEFT JOIN [P4O-Employeedb].Employee.ScheduleFlowBlock sfb on tb.pkTimelineBlock=sfb.fkTimelineBlock#(lf)JOIN (Select distinct * from potentialNewHire) pnh on e.pkEmployee=pnh.pkEmployee#(lf)where fkHrStatus in (4,1)#(lf)#(tab)and tb.isDeleted=0 #(lf)#(tab)--and tb.fromDate <= @endPeriod and tb.fromDate > @endPreviousMonth#(lf)group by e.employeeId, tb.uiResouceItem, tb.fromDate, tb.toDate\"]),",
+                "    #\"Changed DateTime Types\" = Table.TransformColumnTypes(Source,{{\"fromDate\", type date}, {\"toDate\", type date}}),",
+                "    #\"Grouped Rows by employeeId\" = Table.Group(#\"Changed DateTime Types\", {\"employeeId\"}, {{\"NewHire_fromDate\", each List.Min([fromDate]), type nullable date}, {\"NewHire_toDate\", each List.Min([toDate]), type nullable date}})",
+                "in",
+                "    #\"Grouped Rows by employeeId\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Direction",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "direction",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "af82cef3-2635-4b7e-bd2c-31d66586708d",
+            "sourceColumn": "direction",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "642fe919-ce77-4298-a011-e7345b5441ac",
+        "partitions": [
+          {
+            "name": "Direction-c4a3e9fa-455c-4e70-ad34-65b718274cd7",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45W8vRTitWJVvIPDQHTnn76YGYsAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [direction = _t]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"direction\", type text}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "BusinessUnit",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "pkBusinessUnit",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ca836f8f-3a00-4093-9a77-2a8819cb0155",
+            "sourceColumn": "pkBusinessUnit",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "74c0dc3b-cdd9-4446-8541-3c133790c9dc",
+            "sourceColumn": "description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "uiBusinessUnit",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e5dd3f5a-6c1a-4a57-a758-8b34172d1684",
+            "sourceColumn": "uiBusinessUnit",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "24acfccc-bd5c-421a-b1e6-e8c8663599f1",
+        "partitions": [
+          {
+            "name": "BusinessUnit",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(database, \"P4O-COMMONDB\"),",
+                "    businessUnit = Source{[Schema=\"Common\",Item=\"BusinessUnit\"]}[Data],",
+                "    #\"Excluded Ocean Cay\" = Table.SelectRows(businessUnit, each ([description] <> \"Ocean Cay\"))",
+                "in",
+                "    #\"Excluded Ocean Cay\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Organization",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "pkOrganization",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e57ac66b-9b99-4a8f-b04a-b47a7c8164e8",
+            "sourceColumn": "pkOrganization",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "uiSite",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c5577949-7a86-4653-b9a1-b2d539b89b2d",
+            "sourceColumn": "uiSite",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Division",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c7cbd5c3-9048-4899-b1ed-9bdae9042c8c",
+            "sourceColumn": "Division",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "pkOrganization.1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "eed05530-3f45-4f96-bf1f-90cb57223bb6",
+            "sourceColumn": "pkOrganization.1",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "SubDivision",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "79be9b21-2333-43f7-8a1c-7ce3923aa8ba",
+            "sourceColumn": "SubDivision",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "pkOrganization.2",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "df1359f0-915c-4ead-90df-123aebf8af49",
+            "sourceColumn": "pkOrganization.2",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Department",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "adba5ca6-1173-4fc9-bdd7-b4b4463fb33c",
+            "sourceColumn": "Department",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "pkOrganization.3",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "71fc2b3c-e7fa-4d19-8ec5-99d620dc3309",
+            "sourceColumn": "pkOrganization.3",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "SubDepartment",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6f17e69b-6cd1-443e-8199-b5fd8b89cfdc",
+            "sourceColumn": "SubDepartment",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "pkOrganization.4",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "00207824-4de3-475a-b555-4fb25038130c",
+            "sourceColumn": "pkOrganization.4",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "JobTitle",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2ca56abd-63a9-4a09-9a28-976ce9214edf",
+            "sourceColumn": "JobTitle",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "item.4",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a4274d53-b206-48af-9c5e-e7fba18f1969",
+            "sourceColumn": "item.4",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "treepathName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e5373765-cbd9-4576-a588-638a916e2687",
+            "sourceColumn": "treepathName",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "c7ea3d11-3639-42e9-b300-fda67d6ec15a",
+        "partitions": [
+          {
+            "name": "Organization",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Databases(database),",
+                "    #\"P4P-ORGANISATIONDB\" = Source{[Name=\"P4P-ORGANISATIONDB\"]}[Data],",
+                "    Organisation_TreePath = #\"P4P-ORGANISATIONDB\"{[Schema=\"Organisation\",Item=\"TreePath\"]}[Data],",
+                "    #\"Filtered Contemporary and Explora MasterShips\" = Table.SelectRows(Organisation_TreePath, each ([uiSite] = \"806DAA2C-A94E-4E9F-8745-4622D8CE5063\" or [uiSite] = \"CE21F478-324A-41E3-874B-71AEC7431481\")),",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Filtered Contemporary and Explora MasterShips\",{\"pkOrganization\", \"uiSite\", \"itemName\"}),",
+                "    #\"Merged Query By SubDivision\" = Table.NestedJoin(#\"Removed Other Columns\", {\"pkOrganization\"}, #\"Filtered Contemporary and Explora MasterShips\", {\"parent\"}, \"SubDivision\", JoinKind.Inner),",
+                "    #\"Expanded SubDivision\" = Table.ExpandTableColumn(#\"Merged Query By SubDivision\", \"SubDivision\", {\"pkOrganization\", \"itemName\"}, {\"pkOrganization.1\", \"itemName.1\"}),",
+                "    #\"Merged Query By Department\" = Table.NestedJoin(#\"Expanded SubDivision\", {\"pkOrganization.1\"}, #\"Filtered Contemporary and Explora MasterShips\", {\"parent\"}, \"Department\", JoinKind.Inner),",
+                "    #\"Expanded Department\" = Table.ExpandTableColumn(#\"Merged Query By Department\", \"Department\", {\"pkOrganization\", \"itemName\"}, {\"pkOrganization.2\", \"itemName.2\"}),",
+                "    #\"Merged Query By TreePath\" = Table.NestedJoin(#\"Expanded Department\", {\"pkOrganization.2\"}, #\"Filtered Contemporary and Explora MasterShips\", {\"parent\"}, \"Organisation Organisation_TreePath\", JoinKind.Inner),",
+                "    #\"Expanded TreePath\" = Table.ExpandTableColumn(#\"Merged Query By TreePath\", \"Organisation Organisation_TreePath\", {\"pkOrganization\", \"itemName\"}, {\"pkOrganization.3\", \"itemName.3\"}),",
+                "    #\"Merged Queries3\" = Table.NestedJoin(#\"Expanded TreePath\", {\"pkOrganization.3\"}, #\"Filtered Contemporary and Explora MasterShips\", {\"parent\"}, \"Organisation Organisation_TreePath\", JoinKind.Inner),",
+                "    #\"Expanded Organisation Organisation_TreePath1\" = Table.ExpandTableColumn(#\"Merged Queries3\", \"Organisation Organisation_TreePath\", {\"pkOrganization\", \"itemName\", \"item\", \"treepathName\"}, {\"pkOrganization.4\", \"itemName.4\", \"item\", \"treepathName\"}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Expanded Organisation Organisation_TreePath1\",{{\"itemName\", \"Division\"}, {\"itemName.1\", \"SubDivision\"}, {\"itemName.2\", \"Department\"}, {\"itemName.3\", \"SubDepartment\"}, {\"itemName.4\", \"JobTitle\"}, {\"item\", \"item.4\"}})",
+                "in",
+                "    #\"Renamed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Documents",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "IsHidden"
+          }
+        ],
+        "columns": [
+          {
+            "name": "uiEmployee",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "2454d336-35b4-43dc-8974-8c3772ef9825",
+            "sourceColumn": "uiEmployee",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Passport",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "738e7571-353e-446c-9540-7dfa698465ce",
+            "sourceColumn": "Passport",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "U.S.A. Visa",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "b127ee1e-f271-44f9-b4eb-62120f150dc2",
+            "sourceColumn": "U.S.A. Visa",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Schengen Visa",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "fd4b9805-dc66-4bfb-9809-c6acf8341c02",
+            "sourceColumn": "Schengen Visa",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SARS Covid-19 Vaccine Issue Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "isHidden": true,
+            "lineageTag": "7bfea0e8-d0d3-4b20-8629-b2708880c732",
+            "sourceColumn": "SARS Covid-19 Vaccine Issue Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "U.S.A Visa Expiry Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "isHidden": true,
+            "lineageTag": "c245d7a4-796b-40a1-9179-09f60ad4b8c4",
+            "sourceColumn": "U.S.A Visa Expiry Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Schengen Visa Expiry Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "isHidden": true,
+            "lineageTag": "8a3e9cec-72bb-4206-aec1-0272e9fc7d7f",
+            "sourceColumn": "Schengen Visa Expiry Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SARS Covid-19 Vaccine Type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "4030d9ed-0891-4cc9-afc3-cc20b9fd2e7d",
+            "sourceColumn": "SARS Covid-19 Vaccine Type",
+            "summarizeBy": "none"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "4ddc7232-d743-4cf0-9f89-1b49e3dfb3e5",
+        "partitions": [
+          {
+            "name": "Documents",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    dbo_Documents = Sql.Database(database, \"P4A-ANALYTICSDB\", [Query=\" SELECT EmployeeDocument.[uiEmployee]#(lf)      --,EmployeeDocument.fkDocument#(lf)      ,trim(UPPER(EmployeeDocument.[description])) as description#(lf)      ,EmployeeDocument.[number]#(lf)      ,EmployeeDocument.[expiryDate]#(lf)      ,EmployeeDocument.[issueDate]#(lf)      ,DocumentSpecification.[description]#(lf)      FROM [P4O-DOCUMENTDB].[Document].[EmployeeDocument]#(lf)      INNER JOIN (#(lf)         SELECT MAX(pkemployeeDocument) as MAXpk, uiEmployee, fkDocument, Document.[description]#(lf)         FROM [P4O-DOCUMENTDB].[Document].[EmployeeDocument] #(lf)         INNER JOIN [P4O-DOCUMENTDB].[Document].[Document] Document ON Document.[pkDocument] = fkDocument#(lf)         WHERE archived = '0'#(lf)            AND EmployeeDocument.[fkDocument] IN(#(lf)               221 --passport#(lf)               ,233 --schengenvisa#(lf)               ,88 --usavisa#(lf)               ,148 --SarsCovid19#(lf)            )#(lf)         GROUP BY uiEmployee, fkDocument, Document.[description]#(lf)      ) eDocuments ON eDocuments.[MAXpk] = EmployeeDocument.[pkEmployeeDocument] and EmployeeDocument.[uiEmployee] = eDocuments.[uiEmployee]#(lf)      LEFT JOIN [P4O-DOCUMENTDB].[Document].[DocumentSpecification] ON EmployeeDocument.[fkdocumentspecification] = DocumentSpecification.[pkdocumentspecification]#(lf)      WHERE EmployeeDocument.[archived] = '0'\"]),",
+                "    #\"Changed DateTime Types\" = Table.TransformColumnTypes(dbo_Documents,{{\"expiryDate\", type date}, {\"issueDate\", type date}}),",
+                "    #\"issueDate Pivot Column\" = Table.DuplicateColumn(#\"Changed DateTime Types\", \"description\", \"description_issueDate\"),",
+                "    #\"Added Suffix issueDate\" = Table.TransformColumns(#\"issueDate Pivot Column\", {{\"description_issueDate\", each _ & \" Issue Date\", type text}}),",
+                "    #\"expiryDate Pivot Column\" = Table.DuplicateColumn(#\"Added Suffix issueDate\", \"description\", \"description_expiryDate\"),",
+                "    #\"Added Suffix expiryDate\" = Table.TransformColumns(#\"expiryDate Pivot Column\", {{\"description_expiryDate\", each _ & \" Expiry Date\", type text}}),",
+                "    #\"vaccineType Pivot Column\" = Table.DuplicateColumn(#\"Added Suffix expiryDate\", \"description\", \"description_vaccine\"),",
+                "    #\"Added Suffix vaccineType\" = Table.TransformColumns(#\"vaccineType Pivot Column\", {{\"description_vaccine\", each _ & \" Vaccine\", type text}}),",
+                "    #\"Reordered Columns\" = Table.ReorderColumns(#\"Added Suffix vaccineType\",{\"uiEmployee\", \"description\", \"description_issueDate\", \"description_expiryDate\", \"description_vaccine\", \"number\", \"expiryDate\", \"issueDate\", \"description2\"}),",
+                "    #\"Pivoted number Column\" = Table.Pivot(#\"Reordered Columns\", List.Distinct(#\"Reordered Columns\"[description]), \"description\", \"number\"),",
+                "    #\"Pivoted issueDate Column\" = Table.Pivot(#\"Pivoted number Column\", List.Distinct(#\"Pivoted number Column\"[description_issueDate]), \"description_issueDate\", \"issueDate\"),",
+                "    #\"Pivoted expiryDate Column\" = Table.Pivot(#\"Pivoted issueDate Column\", List.Distinct(#\"Pivoted issueDate Column\"[description_expiryDate]), \"description_expiryDate\", \"expiryDate\"),",
+                "    #\"Pivoted vaccineType Column\" = Table.Pivot(#\"Pivoted expiryDate Column\", List.Distinct(#\"Pivoted expiryDate Column\"[description_vaccine]), \"description_vaccine\", \"description2\"),",
+                "    #\"Grouped Rows by uiEmployee\" = Table.Group(#\"Pivoted vaccineType Column\", {\"uiEmployee\"}, {{\"Passport\", each List.Max([PASSPORT]), type nullable text}, {\"U.S.A. Visa\", each List.Max([U.S.A. VISA]), type nullable text}, {\"Schengen Visa\", each List.Max([SCHENGEN VISA]), type nullable text}, {\"SARS Covid-19 Vaccine Issue Date\", each List.Max([#\"SARS COVID-19 VACCINE Issue Date\"]), type nullable date}, {\"U.S.A Visa Expiry Date\", each List.Max([U.S.A. VISA Expiry Date]), type nullable date}, {\"Schengen Visa Expiry Date\", each List.Max([SCHENGEN VISA Expiry Date]), type nullable date}, {\"SARS Covid-19 Vaccine Type\", each List.Max([#\"SARS COVID-19 VACCINE Vaccine\"]), type nullable text}})",
+                "in",
+                "    #\"Grouped Rows by uiEmployee\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
